@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/d3.v2.js"></script>
+    
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <div></div>
+  </body>
+  <script>
+	var h = 400,w = 600;
+
+	var svg = d3.select("div")
+		.append("svg")
+		.attr("height",h)
+		.attr("width",w);
+  </script>
+</html>

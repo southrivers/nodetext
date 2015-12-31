@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  #container
+    script
+      var h = 400,w = 600;
+      d3.slect(#container)
+      .append("svg")
+      .attr("height",h)
+      .attr("width",w);
